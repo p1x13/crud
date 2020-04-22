@@ -9,7 +9,7 @@
                   name="name"
                   #name="ngModel"
                   [(ngModel)]="productService.selectedProduct.name"
-                  placeholder="Add A Product"
+                  placeholder="Agregar producto"
                   >
             </div>
             <div class="form-group">
@@ -19,7 +19,7 @@
                       name="category"
                       #category="ngModel"
                       [(ngModel)]="productService.selectedProduct.category"
-                      placeholder="Add A Category"
+                      placeholder="Agregar categoria"
                       >
             </div>
             <div class="form-group">
@@ -29,7 +29,7 @@
                       name="location"
                       #location="ngModel"
                       [(ngModel)]="productService.selectedProduct.location"
-                      placeholder="Add A Location"
+                      placeholder="Agregar una localización"
                     >
             </div>
             <div class="form-group">
@@ -39,20 +39,19 @@
                       name="price"
                       #price="ngModel"
                       [(ngModel)]="productService.selectedProduct.price"
-                      placeholder="Add A Price"
+                      placeholder="Agregar el precio"
                     >
             </div>   
             <div class="form-group">
                 <button class="btn btn-primary" type="submit">
-                    <i class="fas fa-plus-circle"></i> Add A Product
+                    <i class="fas fa-plus-circle"></i> Agregar producto
                 </button>
                 <button class="btn btn-secondary" type="reset" (click)="resetForm(productForm)">
-                    <i class="fas fa-sync-alt"></i> Reset
+                    <i class="fas fa-sync-alt"></i> Reiniciar
                 </button>
+                <img width="70" src="https://firebasestorage.googleapis.com/v0/b/angular-crud-firebase-5fe2b.appspot.com/o/loader.gif?alt=media&token=02991ef1-e501-40f7-afcb-5f878562aa5e"> 
             </div> 
-            <div class="loading">
-                <img src="../../../../assets/images/loader.gif">
-            </div>              
+              
         </form>
     </div>
 </div>
